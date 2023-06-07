@@ -6,6 +6,6 @@ class User < ApplicationRecord
 
   has_many :pets
   has_many :matches
-  has_many :images, as: :imageable
-  accepts_nested_attributes_for :images
+  has_one_attached :avatar
+  
 end
